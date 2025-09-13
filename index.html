@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-     <title>Day 4: HTML Basics</title>
-  </head>
-  <body>
-    <h1>Welcome to HTML</h1>
-    <p>HTML gives structure to your web pages.</p>
+<head>
+  <meta charset="UTF-8">
+  <title>Home • My Site</title>
+</head>
+<body id="top">
+  <!-- NAVBAR -->
+  <nav aria-label="Main">
+    <a href="#main">Skip to content</a> |
+    <a href="index.html" aria-current="page">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="courses.html">Courses</a> |
+    <a href="contact.html">Contact</a>
+  </nav>
 
-    <h2>Why HTML?</h2>
-    <p>It defines headings, paragraphs, images, links, and more.</p>
+  <!-- MAIN CONTENT -->
+  <main id="main">
+    <h1>Welcome to My Site</h1>
+    <p>This is the homepage. Use the navbar to visit other pages.</p>
+    <p>External resource:
+      <a href="https://salmandeveloper.xyz/" target="_blank" rel="noopener">MDN Web Docs</a>
+    </p>
+  </main>
 
-    <h2>Key Concepts</h2>
-    <p>Learn about <strong>tags</strong>, <em>elements</em>, attributes, and nesting.</p>
-    <hr>
-
-    <h3>Example Link</h3>
-    <p>Visit <a href="./about.html">about</a> to see more.</p>
-  </body>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 My Site • <a href="mailto:salmank.developer@gmail.com">Email</a> •
+       <a href="tel:+9231755660889">Call</a> • <a href="#top">Back to top</a></p>
+  </footer>
+</body>
 </html>
