@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+<body>
+  <h1>Register</h1>
+  <form action="process-form.php" method="POST">
+    
+    <div class="field">
+      <label for="full_name">Full Name *</label>
+      <input type="text" id="full_name" name="full_name" required maxlength="100">
+    </div>
+
+    <div class="field">
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="field">
+      <label for="bio">Short Bio</label>
+      <textarea id="bio" name="bio" rows="4"></textarea>
+    </div>
+
+    <div class="field">
+      <span>Gender:</span>
+      <div class="inline">
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other" checked> Other</label>
+      </div>
+    </div>
+
+    <div class="field">
+      <span>Interests:</span>
+      <div class="inline">
+        <label><input type="checkbox" name="interests[]" value="web"> Web</label>
+        <label><input type="checkbox" name="interests[]" value="ai"> AI</label>
+        <label><input type="checkbox" name="interests[]" value="ds"> Data Science</label>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="country">Country *</label>
+      <select id="country" name="country" required>
+        <option value="">--Select--</option>
+        <option value="PK">Pakistan</option>
+        <option value="US">United States</option>
+        <option value="GB">United Kingdom</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label><input type="checkbox" name="agreed_tos" value="1" required> I agree to the Terms *</label>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

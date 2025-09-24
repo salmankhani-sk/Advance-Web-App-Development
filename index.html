@@ -3,12 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <title>Home • My Site</title>
+  <style>
+    .navbar{
+      color: red;
+      background-color: rgba(174, 253, 125, 0.268);
+      font-size: xx-large;
+    
+      
+      
+    }
+    .navbar:hover{
+      background-color: red;
+      color: black;
+    }
+    .ak{
+      text-decoration: none;
+    }
+    .ak:hover{
+      text-decoration: underline;
+    }
+    #main{
+      width: 80%;
+      background-color: rgb(148, 103, 56);
+      border: 1px solid black;
+      border-radius: 20px;
+      justify-self: center;
+    }
+
+  </style>
+  
 </head>
-<body id="top">
+<body id="top" style="background-color: rgba(232, 229, 53, 0.823); align-items: center;  text-align: center;">
   <!-- NAVBAR -->
-  <nav aria-label="Main">
-    <a href="#main">Skip to content</a> |
-    <a href="index.html" aria-current="page">Home</a> |
+  <nav aria-label="Main" class="navbar"  >
+    
+    <a href="index.html" aria-current="page" style="color: red; a:hover{color: black;}">Home</a> |
     <a href="about.html">About</a> |
     <a href="courses.html">Courses</a> |
     <a href="contact.html">Contact</a>
@@ -16,10 +45,10 @@
 
   <!-- MAIN CONTENT -->
   <main id="main">
-    <h1>Welcome to My Site</h1>
-    <p>This is the homepage. Use the navbar to visit other pages.</p>
+    <h1 style="color: blue; font-size: xx-large;">Welcome to My Site</h1>
+    <p  style="font-size: x-large;">This is the homepage. Use the navbar to visit other pages.</p>
     <p>External resource:
-      <a href="https://salmandeveloper.xyz/" target="_blank" rel="noopener">MDN Web Docs</a>
+      <a class="ak"  href="https://github.com/salmankhani-sk/Advance-Web-App-Development" target="_blank" rel="noopener">Advance-Web-App-Development Repo</a>
     </p>
   </main>
 
